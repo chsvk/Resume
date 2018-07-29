@@ -1,80 +1,31 @@
 <template>
   <div id="app">
     <aside>
+      <h3>Chsvk</h3>
+      <div class="image"></div>
       <nav>
-        <figure>
-          <img src="" alt="">
-          <figcaption>Chsvk</figcaption>
-        </figure>
         <ul>
-          <li>Home</li>
-          <li>Text 2</li>
+          <li><router-link to="/home">Home</router-link></a></li>
+          <li><router-link to="/home">Projects</router-link></li>
+          <li><router-link to="/home">Blog</router-link></li>
+          <li><router-link to="/home">Achievements</router-link></li>
+          <li><router-link to="/home">Contact</router-link></li>
+          <li><router-link to="/home">Social</router-link></li>
         </ul>
       </nav>
     </aside>
     <div class="router">
-      <router-view/>
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
-<style lang="scss">
+<script>
+export default {
 
-body,html{
-  margin: 0;
-  padding: 0;
 }
+</script>
 
-#app {
-  padding: 0;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: grid;
-  grid-template-columns: 20% auto;
-  grid-template-areas: aside router;
-
-  aside{
-    grid-area: aside;
-    margin: 0;
-    padding: 0;
-    background: black;
-
-  nav{
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 40% auto;
-    grid-template-columns: 100%;
-    grid-template-areas: figure ul;
-
-    figure{
-      grid-area: figure;
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      width: 100%;
-      background: white;
-
-      img{
-        min-width: 100%;
-      }
-
-      figcaption{
-        font-weight: bold;
-      }
-    }
-
-    ul{
-      grid-area: ul;
-    }
-  }
-
-  }
-
-  .router{
-    grid-area: router;
-  }
-}
+<style lang="scss" src="./global.scss">
 
 </style>
