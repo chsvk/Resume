@@ -1,16 +1,16 @@
 <template>
   <div id="app">
     <aside>
-      <h3>Chsvk</h3>
+      <router-link to="/"><h3>Chsvk</h3></router-link>
       <div class="image"></div>
       <nav>
         <ul>
-          <li><router-link to="/home">Home</router-link></a></li>
-          <li><router-link to="/home">Projects</router-link></li>
-          <li><router-link to="/home">Blog</router-link></li>
-          <li><router-link to="/home">Achievements</router-link></li>
-          <li><router-link to="/home">Contact</router-link></li>
-          <li><router-link to="/home">Social</router-link></li>
+          <li><router-link to="/">Home</router-link></a></li>
+          <li><router-link to="/soon">Projects</router-link></li>
+          <li><router-link to="/soon">Blog</router-link></li>
+          <li><router-link to="/soon">Achievements</router-link></li>
+          <li><router-link to="/soon">Contact</router-link></li>
+          <li><router-link to="/soon">Social</router-link></li>
         </ul>
       </nav>
     </aside>
